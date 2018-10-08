@@ -12,7 +12,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'echo "Heisan Hoppsan'
+            sh 'echo "Heisan Hoppsan"'
         }
     }
     
