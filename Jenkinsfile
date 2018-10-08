@@ -7,15 +7,19 @@ node {
         checkout scm
     }
 
-    stage('Check Path') {
-        /* Ideally, we would run a test framework against our image.
-         * For this example, we're using a Volkswagen-type approach ;-) */
+    stage('Check Node Status') {
         steps {
                 sh 'echo "Heisan Hoppsan"'
+        }
+    }
+    
+    stage('Check Docker') {
+        steps {
                 sh 'which docker'
                 sh 'docker version'
         }
     }
+
     
     stage('Build image') {
         /* This builds the actual image; synonymous to
