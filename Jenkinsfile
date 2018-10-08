@@ -10,7 +10,8 @@ node {
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-
+        label 'docker'
+        image 'node:7-alpine'
         app = docker.build("edvinunicusno/hellonode")
     }
 
