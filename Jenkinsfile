@@ -8,16 +8,12 @@ node {
     }
 
     stage('Check Node Status') {
-        steps {
-                sh 'echo "Heisan Hoppsan"'
-        }
+        sh 'echo "Heisan Hoppsan"'
     }
     
     stage('Check Docker') {
-        steps {
-                sh 'which docker'
-                sh 'docker version'
-        }
+        sh 'which docker'
+        sh 'docker version'
     }
 
     
