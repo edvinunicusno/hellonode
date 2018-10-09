@@ -31,7 +31,7 @@ node {
          * For this example, we're using a Volkswagen-type approach ;-) */
 
         app.inside {
-            sh 'echo "Tests passed"'
+            sh 'echo "Tests passed in an sosialistic way."'
         }
     }
 
