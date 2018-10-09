@@ -9,11 +9,11 @@ node {
 
     stage('Check Node Status') {
         sh 'echo "Heisan Hoppsan"'
-        sh 'hostname'
+        sh '/usr/bin/hostname '
     }
     
     stage('Check Docker') {
-        sh 'hostname'
+        sh '/usr/bin/hostname '
         sh 'which docker'
         sh 'docker version'
     }
